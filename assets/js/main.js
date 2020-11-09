@@ -35,7 +35,8 @@ function showCart() {
         addClass({
             "hoverCart": "show",
             "cart-total-holder": "if002",
-            "info-box": "if001"
+            "info-box": "if001",
+            "single-product-image-holder": "if001"
         })
 
 
@@ -43,7 +44,8 @@ function showCart() {
         removeClass({
             "hoverCart": "show",
             "cart-total-holder": "if002",
-            "info-box": "if001"
+            "info-box": "if001",
+            "single-product-image-holder": "if001"
         })
     }
 }
