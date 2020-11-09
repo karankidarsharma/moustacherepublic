@@ -4,7 +4,7 @@ var hoverCart = document.getElementById('hoverCart')
 
 cartBtn.addEventListener('click', showCart)
 
-// you can use this function to add a class using key value pair # used on Line 13
+// you can use this function to add a class using key value pair # used on Line 35
 function addClass(p) {
     for (key in p) {
         if (document.getElementById(key)) {
@@ -16,7 +16,7 @@ function addClass(p) {
         }
     }
 }
-// you can use this fucntion to remove a class using key value pair # used on Line 21
+// you can use this fucntion to remove a class using key value pair # used on Line 43
 function removeClass(p) {
     for (key in p) {
         if (document.getElementById(key)) {
