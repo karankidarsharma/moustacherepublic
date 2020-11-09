@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>My Website</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- navigation bar -->
+        <nav>
+            <div class="_nav">
+                <div class="cart-total-holder">
+                    <h3 class="header-cart-total" id="cartBtn">My Cart ( 4 )</h3>
+                    <div id="hoverCart" class="hover-cart-holder">
+                        <div class="hover-cart-card flex">
+                            <div class="row left-card">
+                                <img class="hover-cart-image" src="assets/images/classic-tee.jpg" alt="t-shirt">
+                            </div>
+                            <div class="row right-card">
+                                <p>Classic Tee</p>
+                                <p class="mini-cart-qty"><span class="qty">1</span> X
+                                    <strong>$<span>75.00</span></strong></p>
+                                <p class="mini-cart-size">Size: <span>S</span></p>
+                            </div>
+
+                        </div>
+                        <!-- second cart -->
+                        <div class="hover-cart-card flex">
+                            <div class="row left-card">
+                                <img class="hover-cart-image" src="assets/images/classic-tee.jpg" alt="t-shirt">
+                            </div>
+                            <div class="row right-card">
+                                <p>Classic Tee</p>
+                                <p class="mini-cart-qty"><span class="qty">1</span> X
+                                    <strong>$<span>75.00</span></strong></p>
+                                <p class="mini-cart-size">Size: <span>M</span></p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="content">
+            <div class="row single-product-image-holder">
+                <img class="single-product-image" src="assets/images/classic-tee.jpg" alt="classic-tee">
+            </div>
+            <div class="row info-box">
+                <h1 class="product-title">Classic Tee</h1>
+                <div class="price-holder"><span class="price">$75.00</span></div>
+                <div class="description-holder">
+                    <p class="description">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took
+                    </p>
+                </div>
+                <div class="size-holder">
+                    <div class="size-title">SIZE<sup class="required">*</sup>: <strong id="size-val"></strong></div>
+                    <div class="size-selector-holder">
+
+                        <label class="size-selector">
+                            <input type="radio" name="radio" value="S" id="sizee">
+                            <span onclick="checkSize('S')" class="checkmark">S</span>
+                        </label>
+                        <label class="size-selector">
+                            <input type="radio" name="radio" value="m" id="sizee">
+                            <span onclick="checkSize('M')" class="checkmark">M</span>
+                        </label>
+                        <label class="size-selector">
+                            <input type="radio" name="radio" value="l" id="sizee">
+                            <span onclick="checkSize('L')" class="checkmark">L</span>
+                        </label>
+                    </div>
+                    <p id="error"></p>
+
+                    <div class="add-to-cart-holder">
+                        <input type="submit" onclick="verify()" class="add-to-cart" value="ADD TO CART">
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- custom JS file -->
+    <script rel="javascript" src="assets/js/main.js" type="text/javascript"></script>
+</body>
+
+</html>
