@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
+
     <title>My Website</title>
 </head>
 
@@ -15,10 +16,10 @@
         <nav>
             <div class="_nav">
                 <div class="cart-total-holder">
-                    <h3 class="header-cart-total" id="cartBtn">My Cart ( 4 )</h3>
+                    <h3 class="header-cart-total" id="cartBtn">My Cart ( <span id="cartNumber">0</span> )</h3>
                     <div id="hoverCart" class="hover-cart-holder">
-                        <div class="hover-cart-card flex">
-                            <div class="row left-card">
+                        <!-- <div id="mini-cart" class="hover-cart-card flex"> -->
+                        <!-- <div class="row left-card">
                                 <img class="hover-cart-image" src="assets/images/classic-tee.jpg" alt="t-shirt">
                             </div>
                             <div class="row right-card">
@@ -26,11 +27,11 @@
                                 <p class="mini-cart-qty"><span class="qty">1</span> X
                                     <strong>$<span>75.00</span></strong></p>
                                 <p class="mini-cart-size">Size: <span>S</span></p>
-                            </div>
+                            </div> -->
 
-                        </div>
+                        <!-- </div> -->
                         <!-- second cart -->
-                        <div class="hover-cart-card flex">
+                        <!-- <div class="hover-cart-card flex">
                             <div class="row left-card">
                                 <img class="hover-cart-image" src="assets/images/classic-tee.jpg" alt="t-shirt">
                             </div>
@@ -41,7 +42,7 @@
                                 <p class="mini-cart-size">Size: <span>M</span></p>
                             </div>
 
-                        </div>
+                        </div> -->
 
                     </div>
                 </div>
@@ -67,21 +68,22 @@
 
                         <label class="size-selector">
                             <input type="radio" name="radio" value="S" id="sizee">
-                            <span onclick="checkSize('S')" class="checkmark">S</span>
+                            <span data-size="s" onclick="checkSize('S')" class="checkmark">S</span>
                         </label>
                         <label class="size-selector">
                             <input type="radio" name="radio" value="m" id="sizee">
-                            <span onclick="checkSize('M')" class="checkmark">M</span>
+                            <span data-size="m" onclick="checkSize('M')" class="checkmark">M</span>
                         </label>
                         <label class="size-selector">
                             <input type="radio" name="radio" value="l" id="sizee">
-                            <span onclick="checkSize('L')" class="checkmark">L</span>
+                            <span data-size="l" onclick="checkSize('L')" class="checkmark size-select">L</span>
                         </label>
                     </div>
                     <p id="error"></p>
 
                     <div class="add-to-cart-holder">
-                        <input type="submit" onclick="verify()" class="add-to-cart" value="ADD TO CART">
+                        <a class="add-to-cart" id="add-to-cart">ADD TO
+                            CART</a>
                     </div>
 
 

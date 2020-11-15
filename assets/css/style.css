@@ -20,8 +20,8 @@
     padding-left: 85%;
     height: 42px;
 }
-.single-product-image{
-    height: 600px;
+.single-product-image {
+  height: 470px;
 }
 .header-cart-total{
     font-size: 12px;
@@ -119,6 +119,8 @@
   .add-to-cart{
     font-size:18px ;
     width: 180px;
+    display: block;
+    padding: 10px 20px;
     text-align: center;
     background: transparent;
     text-transform: uppercase;
